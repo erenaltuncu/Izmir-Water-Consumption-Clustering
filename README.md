@@ -37,7 +37,7 @@ Model, aşağıdaki bölgelerde **acil müdahale gerektiren** aşırı tüketim 
 
 1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/erenaltuncu/Izmir-Water-Consumption-Clustering []](https://github.com/erenaltuncu/Izmir-Water-Consumption-Clustering)
+   git clone https://github.com/erenaltuncu/Izmir-Water-Consumption-Clustering
 
 2. Gerekli paketleri yükleyin: 
 pip install -r requirements.txt
