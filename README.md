@@ -55,7 +55,7 @@ Yapılan testler sonucunda, **AdaBoost Regressor** en başarılı model olmuştu
 ### 📈 Etkili Faktörler
 Modelin tahmin başarısında en etkili değişkenin "Hareketli Ortalamalar (MA_3)" ve "Mevsimsellik (Yaz Sezonu)" olduğu görülmüştür. Bu durum, geçmiş tüketim trendlerinin gelecek için en güçlü belirti olduğunu kanıtlar.
 
-![Öznitelik Önem Düzeyleri](feature_importance_advanced.png)
+![Öznitelik Önem Düzeyleri](feature_importance.png)
 
 ##  Kurulum ve Çalıştırma
 
