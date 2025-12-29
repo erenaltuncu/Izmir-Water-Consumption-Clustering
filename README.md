@@ -33,6 +33,20 @@ Model, aşağıdaki bölgelerde **acil müdahale gerektiren** aşırı tüketim 
 | KARŞIYAKA | M. KEMAL | **118.48** |  ANOMALİ | Altyapı kontrol edilmeli |
 | ALİAĞA | BOZKÖY | 19.87 |  YAZLIKÇI | Yazın basınç artırılmalı |
 
+##  Gelecek Tüketim Tahmini (Forecasting)
+
+Projenin ikinci aşamasında, İzmir'in gelecekteki su tüketimini tahmin etmek için **AdaBoost** ve **Random Forest** regresyon algoritmaları kullanılmıştır.
+
+* **Veri Temizliği:** 2020 yılındaki veri hataları (Outliers) istatistiksel yöntemlerle temizlenerek model başarısı artırılmıştır.
+* **Başarı Skoru:** Modelimiz **R² = 0.886** skoruna ulaşarak, akademik literatürdeki benzer çalışmalarla (Örn: R²=0.896) yarışır düzeye gelmiştir.
+
+![Tahmin Grafiği](prediction_graph.png)
+
+**En Etkili Faktörler:**
+Modelin tahmin yaparken en çok "Son 3 ayın ortalamasına" (Moving Average) dikkat ettiği görülmüştür.
+
+![Öznitelik Önemi](feature_importance.png)
+
 ##  Kurulum ve Çalıştırma
 
 1. Repoyu klonlayın:
