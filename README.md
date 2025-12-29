@@ -33,19 +33,29 @@ Model, aşağıdaki bölgelerde **acil müdahale gerektiren** aşırı tüketim 
 | KARŞIYAKA | M. KEMAL | **118.48** |  ANOMALİ | Altyapı kontrol edilmeli |
 | ALİAĞA | BOZKÖY | 19.87 |  YAZLIKÇI | Yazın basınç artırılmalı |
 
-##  Gelecek Tüketim Tahmini (Forecasting)
+##  Gelecek Tüketim Tahmini ve Model Karşılaştırması (Forecasting)
 
-Projenin ikinci aşamasında, İzmir'in gelecekteki su tüketimini tahmin etmek için **AdaBoost** ve **Random Forest** regresyon algoritmaları kullanılmıştır.
+Projenin ileri aşamasında, literatürdeki çalışmalar (Tek et al.) referans alınarak 6 farklı makine öğrenmesi algoritması (AdaBoost, RF, Gradient Boosting, KNN, Decision Tree, SVR) yarıştırılmıştır.
 
-* **Veri Temizliği:** 2020 yılındaki veri hataları (Outliers) istatistiksel yöntemlerle temizlenerek model başarısı artırılmıştır.
-* **Başarı Skoru:** Modelimiz **R² = 0.886** skoruna ulaşarak, akademik literatürdeki benzer çalışmalarla (Örn: R²=0.896) yarışır düzeye gelmiştir.
+###  Deneysel Sonuçlar
+Yapılan testler sonucunda, literatürle uyumlu olarak **AdaBoost Regressor** en başarılı model olmuştur.
 
-![Tahmin Grafiği](prediction_graph.png)
+| Model | R² Skoru | MAPE (Hata Oranı) | Durum |
+| :--- | :--- | :--- | :--- |
+| **AdaBoost (Bizim Model)** | **0.894** | **%2.76** |  En İyi Performans |
+| Random Forest | 0.888 | %2.55 | Çok Başarılı |
+| Gradient Boosting | 0.872 | %2.78 | Başarılı |
+| KNN Regressor | 0.742 | %3.97 | Orta |
+| SVR (Destek Vektör) | -0.626 | %8.74 | Başarısız (Literatürle Uyumlu) |
 
-**En Etkili Faktörler:**
-Modelin tahmin yaparken en çok "Son 3 ayın ortalamasına" (Moving Average) dikkat ettiği görülmüştür.
+* **Karşılaştırma:** Referans makalede **R²=0.896** ve **MAPE=%7.09** elde edilmişken; bu çalışmada dış veri (sıcaklık vb.) kullanılmadan **Feature Engineering (Öznitelik Mühendisliği)** teknikleriyle **R²=0.894** skoruna ulaşılmış ve hata oranı **%2.76** seviyesine indirilmiştir.
 
-![Öznitelik Önemi](feature_importance.png)
+![Model Karşılaştırma Grafiği](model_comparison_graph.png)
+
+### 📈 Etkili Faktörler
+Modelin tahmin başarısında en etkili değişkenin "Hareketli Ortalamalar (MA_3)" ve "Mevsimsellik (Yaz Sezonu)" olduğu görülmüştür. Bu durum, geçmiş tüketim trendlerinin gelecek için en güçlü sinyal olduğunu kanıtlar.
+
+![Öznitelik Önem Düzeyleri](feature_importance_advanced.png)
 
 ##  Kurulum ve Çalıştırma
 
