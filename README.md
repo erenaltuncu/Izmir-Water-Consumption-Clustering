@@ -38,7 +38,10 @@ Model, aşağıdaki bölgelerde **acil müdahale gerektiren** aşırı tüketim 
 Projenin ileri aşamasında, 6 farklı makine öğrenmesi algoritması (AdaBoost, RF, Gradient Boosting, KNN, Decision Tree, SVR) yarıştırılmıştır.
 
 ###  Deneysel Sonuçlar
-Yapılan testler sonucunda, **AdaBoost Regressor** en başarılı model olmuştur.
+### 📉 Doğruluk Analizi (Actual vs Predicted)
+Aşağıdaki grafik, modelin tahminlerinin gerçek değerlerle ne kadar örtüştüğünü gösterir. Noktaların diyagonal çizgi üzerinde toplanması, modelin yüksek hassasiyetle çalıştığını kanıtlar.
+
+![Gerçek vs Tahmin](scatter_pred_vs_actual.png)
 
 | Model | R² Skoru | MAPE (Hata Oranı) | Durum |
 | :--- | :--- | :--- | :--- |
