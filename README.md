@@ -4,7 +4,7 @@
 **Danışman:** Prof. Dr. Muhammed Maruf Öztürk
 
 ##  Proje Özeti
-Bu proje, İzmir genelindeki mahallelerin su tüketim verilerini analiz ederek tüketim alışkanlıklarını modeller. K-Means kümeleme algoritması kullanılarak "Yazlıkçı", "Standart" ve "Aşırı Tüketim (Anomali)" bölgeleri tespit edilmiştir. Amaç, şebeke kayıp/kaçaklarını ve altyapı risklerini veri odaklı olarak yönetmektir.
+Bu proje, İzmir genelindeki mahallelerin su tüketim verilerini analiz ederek tüketim alışkanlıklarını modeller. K-Means kümeleme algoritması kullanılarak "Yazlıkçı", "Standart", "Aşırı Tüketim (Anomali)" ve "Çok Tüketen/Yüksek Gelir" bölgeleri tespit edilmiştir. Amaç, şebeke kayıp/kaçaklarını ve altyapı risklerini veri odaklı olarak yönetmektir.
 
 ##  Kullanılan Teknolojiler
 * **Python 3.x**
@@ -20,7 +20,7 @@ Veri setindeki tüketim davranışlarını en iyi ayrıştıran küme sayısın�
 ![Elbow Grafiği](elbow_method.png)
 
 ### 2. Segmentasyon Sonuçları
-Mahalleler tüketim karakteristiğine göre 4 ana gruba ayrılmıştır. Kırmızı noktalar (Anomaliler) ve Mavi noktalar (Yazlıkçılar) görülmektedir.
+Mahalleler tüketim karakteristiğine göre 4 ana gruba ayrılmıştır. Kırmızı (Anomaliler/Aşırı Tüketim), Sarı (Yazlıkçılar), Yeşil (Çok Tüketenler/Yüksek Gelir) ve Mavi Noktalar(Standart Sakinler) görülmektedir.
 
 ![Scatter Plot Analizi](scatter_plot.png)
 
