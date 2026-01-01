@@ -38,7 +38,7 @@ Model, aşağıdaki bölgelerde **acil müdahale gerektiren** aşırı tüketim 
 Projenin ileri aşamasında, 6 farklı makine öğrenmesi algoritması (AdaBoost, RF, Gradient Boosting, KNN, Decision Tree, SVR) yarıştırılmıştır.
 
 ###  Deneysel Sonuçlar
-### 📉 Doğruluk Analizi (Actual vs Predicted)
+###  Doğruluk Analizi (Actual vs Predicted)
 Aşağıdaki grafik, modelin tahminlerinin gerçek değerlerle ne kadar örtüştüğünü gösterir. Noktaların diyagonal çizgi üzerinde toplanması, modelin yüksek hassasiyetle çalıştığını kanıtlar.
 
 ![Gerçek vs Tahmin](scatter_pred_vs_actual.png)
@@ -55,7 +55,7 @@ Aşağıdaki grafik, modelin tahminlerinin gerçek değerlerle ne kadar örtüş
 
 ![Model Karşılaştırma Grafiği](model_comparison_graph.png)
 
-### 📈 Etkili Faktörler
+###  Etkili Faktörler
 Modelin tahmin başarısında en etkili değişkenin "Hareketli Ortalamalar (MA_3)" ve "Mevsimsellik (Yaz Sezonu)" olduğu görülmüştür. Bu durum, geçmiş tüketim trendlerinin gelecek için en güçlü belirti olduğunu kanıtlar.
 
 ![Öznitelik Önem Düzeyleri](feature_importance.png)
