@@ -20,7 +20,7 @@ Veri setindeki tüketim davranışlarını en iyi ayrıştıran küme sayısın�
 ![Elbow Grafiği](elbow_method.png)
 
 ### 2. Segmentasyon Sonuçları
-Mahalleler tüketim karakteristiğine göre 4 ana gruba ayrılmıştır. Kırmızı/Yeşil noktalar (Anomaliler) ve Mavi noktalar (Yazlıkçılar) görülmektedir.
+Mahalleler tüketim karakteristiğine göre 4 ana gruba ayrılmıştır. Kırmızı noktalar (Anomaliler) ve Mavi noktalar (Yazlıkçılar) görülmektedir.
 
 ![Scatter Plot Analizi](scatter_plot.png)
 
